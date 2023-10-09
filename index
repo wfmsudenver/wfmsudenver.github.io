@@ -1,10 +1,10 @@
 <html>
-<head>
-<title>This is my first web page.</title>
+  <head>
+  <title>This is my first web page.</title>
 
-<body>
+  <body>
 
-  <p>This is my first web page…</p>
+    <p>This is my first web page…</p>
 
-</body>
+  </body>
 </html>
