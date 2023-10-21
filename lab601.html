@@ -4,7 +4,7 @@
     <title>Random types of apples</title>
   </head>
       
-  <body>
+  
     <style>
     h1 { font-family: times;
      font-size: 10em;
@@ -20,9 +20,30 @@
     margin-left: 100px;
   }
     </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+<script>
+       $(document).ready( function() {
+
+        // your code will go in here.
+
+     });
+          $("#sighbutton").click( function() {
+           // if someone clicks on button1, this runs!
+           console.log("someone sighed.");
+
+           $("img").toggle();
+        });
+
+
+</script>
+      </head>
+     <body>
     <div>
      <p>Types of apples:</p>
     </div>
+       <button id="sighbutton">Click here to mentally sigh as apples aren't cheap.</button>
+
     <ul>
       <li>Honeycrisp</li>
       <li>Granny Smith</li>
@@ -41,6 +62,7 @@
     </div>
     <a href="https://en.wikipedia.org/wiki/Honeycrisp">link</a>
     <p class="citation">By Evan-Amos - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=16918509</p>
+         <button id="wishbutton">Click here to pretend you have money you don't so you can buy all the apples in the world.</button>
 
     
   </body>
