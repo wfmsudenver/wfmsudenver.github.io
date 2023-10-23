@@ -24,11 +24,9 @@
     <script>
      $(document).ready( function() {
 
-        // your code will go in here.
 
         $("#sighbutton").click( function() {
-           // if someone clicks on button1, this runs!
-           console.log("someone clicked on button1.");
+           console.log("someone sighed, likely due to financial stress.");
 
            $("img").toggle();
         });
@@ -38,6 +36,7 @@
   </script>
       </head>
      <body>
+    
     <div>
      <p>Types of apples:</p>
     </div>
@@ -61,7 +60,29 @@
     </div>
     <a href="https://en.wikipedia.org/wiki/Honeycrisp">link</a>
     <p class="citation">By Evan-Amos - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=16918509</p>
+    <div id="wanttocry">
+   <button id="appear">A hard truth about life. Want to deal with it?</button>
+      
+</div>
+    <script>
     
+     $(document).ready( function() {
+      var track = 0
+        $("#appear").click( function() {
+           // if someone clicks on appear, this runs!
+          if track==0{
+          console.log("someone wants to see the curtain.");
+        track = 1
+           $("#wanttocry").text("You sure you wanna see it?");
+          }
+          else{console.log("someone REALLY wants to see the curtain.");
+           $("#wanttocry").text("Wealth inequality will always be inherent as long as there are a lot of people and limits to agricultural productivity. So, apples will always have some price no matter how futuristic society becomes, and the majority of people will NEVER be able to simply have apples whenever they want.");          
+        });
+…
+     });
+
+  </script>
+
   </body>
   
 </html>
