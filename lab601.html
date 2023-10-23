@@ -31,6 +31,20 @@
            $("img").toggle();
         });
 
+     //});
+      var track = 0
+        $("#appear").click( function() {
+           // if someone clicks on appear, this runs!
+          if track==0{
+          console.log("someone wants to see the curtain.");
+          track = 1;
+           $("#wanttocry").text("You sure you wanna see it?");
+          }
+          else {
+          console.log("someone REALLY wants to see the curtain.");
+           $("#wanttocry").text("Wealth inequality will always be inherent as long as there are a lot of people and limits to agricultural productivity. So, apples will always have some price no matter how futuristic society becomes, and the majority of people will NEVER be able to simply have apples whenever they want.");          
+          }
+          });
      });
 
   </script>
@@ -64,26 +78,6 @@
    <button id="appear">A hard truth about life. Want to deal with it?</button>
       
 </div>
-    <script>
-    
-     $(document).ready( function() {
-      var track = 0
-        $("#appear").click( function() {
-           // if someone clicks on appear, this runs!
-          if track==0{
-          console.log("someone wants to see the curtain.");
-          track = 1;
-           $("#wanttocry").text("You sure you wanna see it?");
-          }
-          else {
-          console.log("someone REALLY wants to see the curtain.");
-           $("#wanttocry").text("Wealth inequality will always be inherent as long as there are a lot of people and limits to agricultural productivity. So, apples will always have some price no matter how futuristic society becomes, and the majority of people will NEVER be able to simply have apples whenever they want.");          
-          }
-          });
-     });
-
-  </script>
-
   </body>
   
 </html>
