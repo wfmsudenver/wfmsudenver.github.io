@@ -7,7 +7,8 @@
      crossorigin=""/>
   </head>
   <body>
-     <div id="map"></div>
+    <script>
+     <div id="map">
     #map { height: 400px; }
     var map = L.map('map').setView([51.505, -0.09], 13);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -38,6 +39,8 @@ function onMapClick(e) {
 }
 
 map.on('click', onMapClick);
+    </div>
+      </script>
   </body>
    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
