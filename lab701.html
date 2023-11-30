@@ -19,24 +19,30 @@
   </body>
         <script>
         
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    var map = L.map('map').setView([39.6, -106.05], 15);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
-    var marker = L.marker([51.5, -0.09]).addTo(map);
-    var circle = L.circle([51.508, -0.11], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 500
+              var circle = L.circle([39.57, -106.1], {
+    color: 'blue',
+    fillColor: '#302',
+    fillOpacity: 0.3,
+    radius: 700
 }).addTo(map);
-    var polygon = L.polygon([[51.509, -0.08], [51.503, -0.06],[51.51, -0.047]]).addTo(map);
-    marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-circle.bindPopup("I am a circle.");
-polygon.bindPopup("I am a polygon.");
+
+    var marker = L.marker([39.663, -105.88]).addTo(map);
+     var marker2 = L.marker([39.53, -106.215]).addTo(map);
+
+   
+    var polygon = L.polygon([[39.625, -106.035], [39.644, -106.04],[39.64, -106.083][39.62,-106.07]]).addTo(map);
+    marker.bindPopup("This is Loveland Pass.").openPopup();
+        marker.bindPopup("This is Vail Pass.").openPopup();
+
+circle.bindPopup("This is Frisco.");
+polygon.bindPopup("This is Silverthorne and Dillon.");
     var popup = L.popup()
-    .setLatLng([51.513, -0.09])
-    .setContent("I am a standalone popup.")
+    .setLatLng([39.65, -106])
+    .setContent("Summit County...")
     .openOn(map);
     var popup = L.popup();
 
